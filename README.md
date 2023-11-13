@@ -1,12 +1,11 @@
 # back-end
 
+Clone o repositório
 
-Clone  o repositorio
+Execute yarn ou npm i para baixar as dependências
 
-execute  um yarn ou  npm  i para   baixar   as   dependencias
+Execute yarn start:dev para rodar o projeto
 
-execute   um yarn  start:dev para rodar o projeto
+O servidor será iniciado na porta 3000 em seu localhost. Mantenha o servidor em execução enquanto roda o front-end para permitir que as requisições sejam feitas.
 
-
-o servidor  ira rodar na  porta 3000 em seu localhost, deixe o servidor rodando em quando roda o front-end para que  você possa fazer as requisiçoes
-essa foi  a maneira que eu  fiz para que  o  cors que estava  impedindo  a request no front  fosse burlado,  então fiz um pequeno backend só para liberar o cors
+Essa foi a solução que implementei para contornar o problema de CORS que estava bloqueando as requisições no front-end. Criei um pequeno backend apenas para lidar com o CORS.
