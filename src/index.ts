@@ -8,7 +8,6 @@ const port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 
-// Configuração do CORS
 app.use(cors())
 
 let authToken = ""
@@ -23,7 +22,7 @@ app.post("/login", async (req, res) => {
       { username, password },
     )
     console.log("Logado com Sucesso")
-    authToken = response.data.token // Atribua o token à variável global
+    authToken = response.data.token
     res.json(response.data)
   } catch (error) {
     console.log("Error: ", error)
@@ -140,7 +139,6 @@ app.get("/api/ToDo/MarkAsDone/:id", async (req, res) => {
 
     const markedAsDoneItem = response.data
 
-    // Aqui você pode processar a tarefa marcada como concluída conforme necessário
     console.log("Tarefa Marcada como Concluída:", markedAsDoneItem)
 
     res.json(markedAsDoneItem)
