@@ -2,6 +2,8 @@
 
 Clone o repositório
 
+git clone https://github.com/hendreoestevao/back-end.git
+
 Execute yarn ou npm i para baixar as dependências
 
 Execute yarn start:dev para rodar o projeto
