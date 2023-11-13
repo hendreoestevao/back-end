@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+.vscode/*
+.docker/dbdata
+
+.env
+.eslintcache
+!.vscode/extensions.json
+yarn-error.log
